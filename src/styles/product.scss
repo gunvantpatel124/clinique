@@ -1,0 +1,246 @@
+
+@import 'variables.scss';
+
+/** Add styles here **/
+.elc-button{
+   width: 100%;
+   padding: 20px;
+}
+.elc-product{
+    font-family: $elc-font;
+    margin: 0 64px;
+    @media only screen and (max-width: $potrait-up) {
+       display: flex;
+       flex-direction: column;
+       margin: 20px 15px;
+    }
+    &__section{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #E6E6E6;
+        // padding: 30px 0;
+        @media only screen and (max-width: $potrait-up) {
+            flex-direction: column;
+        }
+    }
+    &__img{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            figure{
+                margin: 0;
+            }
+    }
+    &__desc-section{
+        width: 50%;
+        padding: 20px 0;
+        
+        @media only screen and (max-width: $potrait-up) {
+            width: 100%;
+         }
+         &-inner{
+            border-bottom: 1px solid #E6E6E6;
+         }
+         &-heading{
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0;
+            color:#999999;
+         }
+         &-product-name{
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 32px;                    
+            letter-spacing: -0.02em;
+            margin: 10px auto;
+         }
+         &-description{
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            margin: 4px auto;
+         }
+    }
+    &__rating{
+       &-figure{
+            display: flex;
+            margin-left: 0;
+       }
+       &-caret-wrapper{
+        margin-left: 10px;
+       }
+    }
+    &__features{
+        &-item-grp{
+            display: flex;
+            @media only screen and (max-width: $potrait-up) {
+              flex-direction: column;
+             }
+        }
+        &-item{
+            width: 50%;
+            height: auto;
+            margin: 10px auto;
+            line-height: 24px;
+            @media only screen and (max-width: $potrait-up) {
+                width: 100%;
+             }
+        }
+        &-heading{
+            margin: 5px auto;
+        }
+        &-info{
+            margin: 5px auto;
+        }
+    }
+    &__shade{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: $potrait-up) {
+            width: 100%;
+         }
+        &-button{
+            background: #FFFFFF;
+            border: 2px solid #E6E6E6;
+        }
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-name{
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 24px;
+            /* identical to box height, or 141% */
+            letter-spacing: -0.01em;
+        }
+        &-color{
+            width: 16px;
+            height: 16px;
+            background: #F6DFC8;
+        }
+    }
+    &__purchase{
+        font-weight: 700;
+        color: #1A1A1A;
+        &-grp{
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px auto;
+            @media only screen and (max-width: $potrait-up) {
+                flex-direction: column;
+                margin: 0;
+            }
+        }
+        &-grp:nth-child(1){
+            @media only screen and (max-width: $potrait-up) {
+                flex-direction: row;
+            }
+        }
+        &-item{
+            width: 50%;
+            display: flex;
+            line-height: 24px;
+            margin:30px auto;
+            @media only screen and (max-width: $potrait-up) {
+                width: 100%;
+            }
+        }
+        &-item-inner{
+            margin-left: 14px;
+            display: flex;
+        }
+        &-frequency-img{
+            width: 12px;
+        }
+        &-price{
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+        }
+        &-add-button{
+            background: #000000;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    &__grid-section{
+        &-inner{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            @media only screen and (max-width: $potrait-up) {
+                flex-direction: column;
+            }
+        }
+        .elc-product-card{
+            width: 100%;
+            margin: 0 12px;
+            @media only screen and (max-width: $potrait-up) {
+                margin: 0;
+            }
+            &__img-wrapper{   
+                background: #FAFAFA;
+                padding: 25px 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 276px;
+                    height: 344px;
+                    object-fit: contain;
+                }
+            }
+            &__heading-text{
+                margin: 21px auto;
+                width: 100%;
+                color: #1A1A1A;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+            }
+            &__price-text{
+                color: #8E8E8E;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+            }
+            &__shop{
+                &-button{
+                    color: #1A1A1A;
+                    background: #E6E6E6;
+                    border:2px solid #E6E6E6;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .elc-product-card:nth-child(1){
+            margin-left: 0;
+        }
+        .elc-product-card:nth-child(4){
+            margin-right: 0;
+        }
+    }
+}
+
+
